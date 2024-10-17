@@ -2,6 +2,9 @@
 <div class="toolbar-spacer"></div>
 <a [routerLink]="['home']">Home</a> -
 <a [routerLink]="['profile']">Profile</a>
+
+<button mat-raised-button *ngIf="!loginDisplay" (click)="login()">Login</button>
+
 <div class="contener">
   <router-outlet></router-outlet>
 </div>
